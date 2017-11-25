@@ -19,7 +19,26 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this command and add your code below...
+// Generate a random number
+let number = random(from: 0, toButNotIncluding: 3)
+// If you get a two draw text
+canvas.fillColor = Color.blue
+if number == 2{
+    canvas.drawText(message: "You Win!!!", size: 20, x: 150, y: 150)
+}
+
+    // If you get a one draw a circle
+canvas.fillColor = Color.purple
+if number == 1{
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 100, height: 100)
+}
+// If you get a zero draw a square
+canvas.fillColor = Color.orange
+if number == 0{
+    canvas.drawRectangle(centreX: 150, centreY: 150, width: 100, height: 100)
+}
+
+
 
 /*:
  ## Template code

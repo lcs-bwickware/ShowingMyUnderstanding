@@ -22,9 +22,10 @@ import PlaygroundSupport
 
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
-
-// Replace this comment and add your code below...
-
+canvas.fillColor = Color.blue
+canvas.drawRectangle(centreX: 150, centreY: 150, width: 150, height: 150)
+canvas.fillColor = Color.orange
+canvas.drawEllipse(centreX: 150, centreY: 150, width: 100, height: 100)
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.

@@ -28,7 +28,16 @@ let canvas = Canvas(width: 300, height: 300)
 // Generate a random number
 let number = random(from: 0, toButNotIncluding: 2)
 
-// Replace this comment and add your code below...
+// If you get a one draw a circle
+if number == 1{
+    canvas.drawEllipse(centreX: 150, centreY: 150, width: 100, height: 100)
+}
+// If you get a zero draw a square
+if number == 0{
+    canvas.drawRectangle(centreX: 150, centreY: 150, width: 100, height: 100)
+}
+
+
 
 /*:
  ## Template code
